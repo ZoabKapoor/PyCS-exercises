@@ -1,0 +1,25 @@
+import turtle               # allows us to use the turtles library
+wn = turtle.Screen()        # creates a graphics window
+zach = turtle.Turtle()      # create a turtle named alex
+
+zach.forward(150)           # tell zach to move forward by 150 units
+zach.left(90)               # turn by 90 degrees
+zach.forward(75)            # complete the second side of a rectangle
+zach.left(90)               # turn by 90 degrees
+zach.forward(150)           # tell zach to move forward by 150 units
+zach.left(90)               # turn by 90 degrees
+zach.forward(75)            # complete the last side of a rectangle
+zach.left(90)               # turn by 90 degrees
+
+zach.up()                   # picks up pen to avoid writing
+zach.goto(-20, -20)         # moves to (-20, -20)
+zach.down()                 # puts down pen to prepare for writing next rect.
+
+zach.forward(190)           # tell zach to move forward by 190 units
+zach.left(90)               # turn by 90 degrees
+zach.forward(115)           # complete the second side of a rectangle
+zach.left(90)               # turn by 90 degrees
+zach.forward(190)           # tell zach to move forward by 190 units
+zach.left(90)               # turn by 90 degrees
+zach.forward(115)           # complete the last side of a rectangle
+zach.left(90)               # turn by 90 degrees
