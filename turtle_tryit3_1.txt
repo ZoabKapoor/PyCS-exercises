@@ -1,0 +1,21 @@
+import turtle
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightblue")
+
+andrew = turtle.Turtle()           # create three turtle and set some attributes
+alex   = turtle.Turtle()
+paige  = turtle.Turtle()
+andrew.color('green')
+alex.color('red')
+paige.color('white')
+
+alex.left(120)
+paige.right(120)
+
+for turtle in [andrew, alex, paige]:
+        turtle.forward(150)
+        turtle.right(90)
+        turtle.forward(50)
+    
+wn.exitonclick()
+
