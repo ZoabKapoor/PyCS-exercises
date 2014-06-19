@@ -1,0 +1,14 @@
+import turtle            	#set up turtle
+wn = turtle.Screen()
+michael = turtle.Turtle()
+
+sidelength = 150		#set up the side length of our squares
+angle = 90				#set up the interior angles of our squares (90 degrees)
+
+for x in range(20):		#each iteration through the loop draws a new square 0.9 times as big as the last one
+    for side in range(4):
+        michael.forward(sidelength)
+        michael.left(angle)
+    sidelength *= .9
+
+wn.exitonclick()

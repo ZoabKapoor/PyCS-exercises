@@ -3,23 +3,47 @@ import turtle
 wn = turtle.Screen()
 wn.bgcolor("black")        # set the window background color
 
-john = turtle.Turtle()
-john.pensize(10)
+george = turtle.Turtle()
+george.color("green")
+george.pensize(3)
 
-for color in ['red', 'green', 'blue']:
-    john.pencolor(color)
+for side in range(5):      # a star has five sides
+    george.forward(150)    # for each side, move forward
+    george.right(144)      # then turn right by 
+
+wn.exitonclick()           # wait for a user click on the canvas
+
+4)
+import turtle
+
+"""This is a rather difficult problem, it exploits a bug in the turtle library,
+in which filling a polygon using the begin_fill() end_fill() methods may result
+in undesired change in the border.  As such, the best way to successfully 
+produce the desired picture is to first fill a triangle with white, and then
+to draw over the boundary of that same triangle with the desired colors."""
+
+wn = turtle.Screen()
+wn.bgcolor("black")        # set the window background color
+
+john = turtle.Turtle()
+john.pensize(1)
+
+john.begin_fill()       #marks the starting point of the polygon
+john.fillcolor("white") #sets the fill color for the polygon
+
+for sides in range(3):  #this loop creates a triangle
     john.forward(80)
     john.left(120)
     
-john.begin_fill()
-john.fillcolor("white")
-john.pensize(0.01)
+john.end_fill()         #which is filled with white
+john.pensize(5)         #increases the pensize for more visible edges
 
-for color in ['red', 'green', 'blue']:
-    john.pencolor(color)
+for color in ['red', 'green', 'blue']: #this loop creates the edges
+    john.pencolor(color)               #with each side a different color
     john.forward(80)
     john.left(120)
 
-john.end_fill()
+
     
 wn.exitonclick()                # wait for a user click on the canvas
+

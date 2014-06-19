@@ -1,0 +1,18 @@
+
+import turtle            #set up turtle
+wn = turtle.Screen()
+juan = turtle.Turtle()
+
+juan.up()
+juan.goto(0,-40)
+juan.down()
+juan.speed(0)			#this setting causes the turtle to draw the image instantaneously, instead of having to wait for it to trace out the entire image. This is useful for larger images.
+
+for x in range(73):		#since we are using an angular change
+    juan.forward(150)		#of 2.5 degrees and we want a total 
+    juan.backward(150)	#displacement of 180 degrees, we want
+    juan.left(2.5)		#180/2.5 + 1 = 73 drawings, one at zero 
+#and then 72 at different angles
+
+wn.exitonclick()		#closes window when clicked
+

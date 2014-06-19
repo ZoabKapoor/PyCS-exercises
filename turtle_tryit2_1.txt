@@ -6,7 +6,7 @@ wn.bgcolor("black")        # set the window background color
 john = turtle.Turtle()
 john.pensize(5)
 
-for color in ['red', 'green', 'blue']:
+for color in ['red', 'green', 'blue']:	# each iteration through the loop draws one side of the triangle in a different color
     john.color(color)
     john.forward(80)
     john.left(120)

@@ -7,17 +7,19 @@ sarah = turtle.Turtle()
 sarah.color("green")
 sarah.pensize(3)
 
-for side in range(3):
+for side in range(3): 	#for three sides of a triangle
     sarah.forward(45)
-    sarah.pensize(7)
+    sarah.pensize(7)	#alternate pen thickness
     sarah.forward(45)
-    sarah.pensize(3)
+    sarah.pensize(3)	#between seven and three
     sarah.forward(45)
     sarah.pensize(7)
     sarah.forward(45)
     sarah.pensize(3)
     
-    sarah.left(120)
+    sarah.left(120)	#turns 120 degrees between each side
+
+
 
 wn.exitonclick()                # wait for a user click on the canvas
 

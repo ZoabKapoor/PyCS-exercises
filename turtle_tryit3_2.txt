@@ -1,23 +1,25 @@
+“““Note that to solve this exercise we are creating 8 different turtles.  Since we are only controlling one turtle at a time, we will put the variable creation inside the loop so that we can make one part of the drawing and then assign the variable name to a brand new turtle. The drawings the previous turtle made are kept.”””
+
 import turtle
 wn = turtle.Screen()             # Set up the window and its attributes
 wn.bgcolor("lightblue")
 
 for length in range(4):
-    emma = turtle.Turtle()           # create a turtle and set some attributes
+    emma = turtle.Turtle()			# create a turtle and set some attributes
     emma.color('green')
     emma.pensize(3)
-    emma.forward(40 + 40*length)
-    if( length % 2 == 0):
-        emma.left(90)
+    emma.forward(40 + 40*length)	# moves forward
+    if( length % 2 == 0):			# for every other time through the loop
+        emma.left(90) 			# turn left 90 deg
     else:
-        emma.right(90)
-    emma.forward(40)
+        emma.right(90)			# or right 90 deg
+    emma.forward(40)				# and move that way
     
-for length in range(4):
-    emma = turtle.Turtle()           # create a turtle and set some attributes
+for length in range(4):			#this loop creates the same drawing on the other side by negating the amount forward turtles go
+    emma = turtle.Turtle()           
     emma.color('green')
     emma.pensize(3)
-    emma.forward(-40 - 40*length)
+    emma.forward(-(40 + 40*length))
     if( length % 2 == 1):
         emma.left(90)
     else:
