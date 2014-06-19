@@ -1,0 +1,28 @@
+import turtle
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightblue")
+
+for length in range(4):
+    emma = turtle.Turtle()           # create a turtle and set some attributes
+    emma.color('green')
+    emma.pensize(3)
+    emma.forward(40 + 40*length)
+    if( length % 2 == 0):
+        emma.left(90)
+    else:
+        emma.right(90)
+    emma.forward(40)
+    
+for length in range(4):
+    emma = turtle.Turtle()           # create a turtle and set some attributes
+    emma.color('green')
+    emma.pensize(3)
+    emma.forward(-40 - 40*length)
+    if( length % 2 == 1):
+        emma.left(90)
+    else:
+        emma.right(90)
+    emma.forward(40)
+    
+    
+wn.exitonclick()

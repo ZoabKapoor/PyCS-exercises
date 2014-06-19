@@ -1,0 +1,14 @@
+import turtle
+
+wn = turtle.Screen()
+wn.bgcolor("black")        # set the window background color
+
+john = turtle.Turtle()
+john.pensize(5)
+
+for color in ['red', 'green', 'blue']:
+    john.color(color)
+    john.forward(80)
+    john.left(120)
+    
+wn.exitonclick()                # wait for a user click on the canvas
