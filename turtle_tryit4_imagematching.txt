@@ -1,0 +1,20 @@
+import turtle            #set up turtle
+wn = turtle.Screen()
+jacob = turtle.Turtle()
+
+jacob.up() 
+jacob.goto(-20,-60) #relocates the turtle to the position (-20, -60) so that the entirety of the images it draws appear in the window
+jacob.down()
+sidelength = 150
+jacob.speed(0)  # these images take a very long time to draw, so we’ll set jacob’s speed to 0 so the images get drawn instantaneously
+ANGLE = 90 	# we can change the parameter ANGLE to generate different images
+
+for x in range(50): 		# this loop draws a rectangle of length sidelength, then goes to the top right corner of the rectangle, turns by the angle specified, then repeats the process
+    for y in range(6):
+        jacob.forward(sidelength)
+        jacob.left(90)
+    jacob.forward(sidelength)
+    jacob.left(ANGLE)
+    
+wn.exitonclick()
+

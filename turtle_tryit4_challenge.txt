@@ -1,0 +1,19 @@
+import turtle            #set up turtle
+wn = turtle.Screen()
+jacob = turtle.Turtle()
+
+jacob.up()				#relocates the turtle to a lower position
+jacob.goto(-20,-20)		#without drawing as it moves
+jacob.down()	
+sidelength = 150
+jacob.speed(0)  # these images take a very long time to draw, so we’ll set jacob’s speed to 0 so the images get drawn instantaneously	
+
+for iterations in range(50):		#the fifty can be any fairly large number of iterations (students can experiment)
+    for sides in range(4):	#draw a square (4 sided) so we loop 4 times
+        jacob.forward(sidelength)
+        jacob.left(90)
+        sidelength *= .983	#of course, any value close to this would work
+    
+wn.exitonclick()
+
+
