@@ -2,17 +2,17 @@ import turtle
 wn = turtle.Screen()             # Set up the window and its attributes
 wn.bgcolor("lightblue")
 
-andrew = turtle.Turtle()           # create three turtle and set some attributes
+andrew = turtle.Turtle()           # create three turtles and set some attributes
 alex   = turtle.Turtle()
 paige  = turtle.Turtle()
 andrew.color('green')
 alex.color('red')
 paige.color('white')
 
-alex.left(120)
+alex.left(120)			# give the point the turtles in different directions
 paige.right(120)
 
-for turtle in [andrew, alex, paige]:
+for turtle in [andrew, alex, paige]:	# for each turtle, move forward, then to the right
         turtle.forward(150)
         turtle.right(90)
         turtle.forward(50)

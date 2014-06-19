@@ -1,26 +1,10 @@
-import turtle
-
-wn = turtle.Screen()
-wn.bgcolor("black")        # set the window background color
-
-george = turtle.Turtle()
-george.color("green")
-george.pensize(3)
-
-for side in range(5):      # a star has five sides
-    george.forward(150)    # for each side, move forward
-    george.right(144)      # then turn right by 
-
-wn.exitonclick()           # wait for a user click on the canvas
-
-4)
-import turtle
-
 """This is a rather difficult problem, it exploits a bug in the turtle library,
 in which filling a polygon using the begin_fill() end_fill() methods may result
 in undesired change in the border.  As such, the best way to successfully 
 produce the desired picture is to first fill a triangle with white, and then
 to draw over the boundary of that same triangle with the desired colors."""
+
+import turtle
 
 wn = turtle.Screen()
 wn.bgcolor("black")        # set the window background color

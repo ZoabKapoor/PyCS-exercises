@@ -3,7 +3,7 @@ wn = turtle.Screen()
 alex = turtle.Turtle()
 
 
-for x in range(4): 	#each iteration through the loop draws one quarter of a cross. 
+for x in range(4): 	#each iteration through the loop draws one quarter of the cross. 
     alex.forward(25)
     alex.right(90)
     alex.forward(50)

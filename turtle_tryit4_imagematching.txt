@@ -9,7 +9,7 @@ sidelength = 150
 jacob.speed(0)  # these images take a very long time to draw, so we’ll set jacob’s speed to 0 so the images get drawn instantaneously
 ANGLE = 90 	# we can change the parameter ANGLE to generate different images
 
-for x in range(50): 		# this loop draws a rectangle of length sidelength, then goes to the top right corner of the rectangle, turns by the angle specified, then repeats the process
+for x in range(50): 		# this loop draws a square, then at the top right corner of the generated square, the turtle goes forward sidelength units and turns left by the angle specified as ANGLE.
     for y in range(6):
         jacob.forward(sidelength)
         jacob.left(90)

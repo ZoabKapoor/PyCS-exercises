@@ -1,4 +1,3 @@
-
 import turtle            #set up turtle
 wn = turtle.Screen()
 juan = turtle.Turtle()

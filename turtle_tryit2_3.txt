@@ -8,7 +8,7 @@ george.color("green")
 george.pensize(3)
 
 for side in range(5):      #a star has five sides
-    george.forward(150)    #for each side, move forward
-    george.right(144)      #then turn right by 
+    george.forward(150)    #for each side, move forward 150 units
+    george.right(144)      #then turn right by 140 degrees
 
 wn.exitonclick()           # wait for a user click on the canvas
